@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vaultweave-backup"
+version = "1.0.0"
+description = "Content-defined snapshot storage and verified filesystem restore"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+vaultweave = "vaultweave.cli:entry"
+
+[tool.setuptools]
+packages = ["vaultweave"]
